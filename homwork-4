@@ -1,0 +1,12 @@
+SELECT DISTINCT replacement_cost FROM film;
+
+SELECT COUNT(*) FROM (SELECT DISTINCT replacement_cost FROM film) AS alt_sorgu;
+
+SELECT COUNT(*) FROM film
+WHERE title LIKE 'T%' AND rating = 'G';
+
+SELECT COUNT(*) FROM country
+WHERE country ILIKE '%%%%%';
+
+SELECT COUNT(*) FROM city
+WHERE city ILIKE 'R%';
